@@ -1,6 +1,6 @@
 {
-  "name": "@serverless/tencent-koa",
-  "version": "2.2.2",
+  "name": "cmux-tencent-koa",
+  "version": "1.0.2",
   "description": "Tencent Koa Component",
   "repository": "serverless-components/tencent-koa",
   "keywords": [
@@ -15,7 +15,7 @@
   "dependencies": {
     "@serverless/core": "^1.1.2",
     "@serverless/tencent-apigateway": "^2.1.4",
-    "@serverless/tencent-scf": "^3.0.0",
+    "cmux-tencent-scf": "^1.0.2",
     "ext": "^1.4.0",
     "fs-extra": "^8.1.0",
     "prettier": "^1.19.1",

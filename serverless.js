@@ -39,7 +39,7 @@ module.exports = class TencentKoa extends Component {
     inputs.handler = `${path.basename(cachedHandlerPath, '.js')}.handler`;
     inputs.runtime = 'Nodejs8.9';
 
-    const tencentCloudFunction = await this.load('@serverless/tencent-scf');
+    const tencentCloudFunction = await this.load('cmux-tencent-scf');
 
     if (inputs.functionConf) {
       inputs.timeout = inputs.functionConf.timeout || 3;
@@ -106,7 +106,7 @@ module.exports = class TencentKoa extends Component {
       fromClientRemark: inputs.fromClientRemark || 'tencent-koa',
     };
     const tencentApiGateway = await this.load('@serverless/tencent-apigateway');
-    const tencentCloudFunction = await this.load('@serverless/tencent-scf');
+    const tencentCloudFunction = await this.load('cmux-tencent-scf');
 
     await tencentApiGateway.remove(removeInput);
     await tencentCloudFunction.remove(removeInput);
