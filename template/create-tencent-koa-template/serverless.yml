@@ -1,0 +1,9 @@
+# serverless.yml
+
+koa:
+  component: 'cmux-tencent-koa'
+  inputs:
+    region: ap-beijing
+    functionName: $functionName
+    tags:
+      ux: webtest1
